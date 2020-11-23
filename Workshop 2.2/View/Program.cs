@@ -11,8 +11,9 @@ namespace Workshop_2._2
             UserModifyWord viewModel = new UserModifyWord();
             Console.WriteLine("Hello !");
             Console.WriteLine("Please write a chain of 1-8 characters");
-            string word = Console.ReadLine();
-            Console.WriteLine(viewModel.ModifyWord(word));
+            viewModel.userWord.ChainWord = Console.ReadLine();
+            viewModel.ModifyWord();
+            Console.WriteLine(viewModel.newUserWord.NewChainWord);
         }
     }
 }

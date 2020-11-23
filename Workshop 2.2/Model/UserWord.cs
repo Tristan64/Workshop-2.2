@@ -6,6 +6,6 @@ namespace Workshop_2._2.Model
 {
     public class UserWord
     { 
-            public string ChainWord;
+            public string ChainWord { get; set; }
     }
 }
