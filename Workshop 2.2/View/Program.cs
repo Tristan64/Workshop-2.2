@@ -12,7 +12,7 @@ namespace Workshop_2._2
             Console.WriteLine("Hello !");
             Console.WriteLine("Please write a chain of 1-8 characters");
             string word = Console.ReadLine();
-            viewModel.ModifyWord(word);
+            Console.WriteLine(viewModel.ModifyWord(word));
         }
     }
 }

@@ -7,7 +7,7 @@ namespace Workshop_2._2.ViewModel
 {
     class UserModifyWord
     {
-        public void ModifyWord(string word)
+        public string ModifyWord(string word)
         {
             UserWord userWord = new UserWord();
             NewUserWord newUserWord = new NewUserWord();
@@ -19,6 +19,7 @@ namespace Workshop_2._2.ViewModel
             {
                 userWord.ChainWord = word;
                 newUserWord.NewChainWord = word.ToUpper();
+                return newUserWord.NewChainWord;
             }
         }
     }
