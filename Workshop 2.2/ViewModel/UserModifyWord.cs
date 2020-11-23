@@ -13,7 +13,7 @@ namespace Workshop_2._2.ViewModel
             NewUserWord newUserWord = new NewUserWord();
             if(word.Length>9 || word.Length < 0)
             {
-                throw new InvalidOperationException("Invalid character chain")
+                throw new InvalidOperationException("Invalid character chain");
             }
             else
             {
