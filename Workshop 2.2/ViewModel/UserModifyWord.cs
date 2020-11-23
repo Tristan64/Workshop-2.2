@@ -13,16 +13,12 @@ namespace Workshop_2._2.ViewModel
             NewUserWord newUserWord = new NewUserWord();
             if(word.Length>9 || word.Length < 0)
             {
-                Console.WriteLine("Error : Invalid chain of caracter");
+                throw new InvalidOperationException("Invalid character chain")
             }
             else
             {
                 userWord.ChainWord = word;
-                Console.WriteLine("Modification en cours...");
-                word = word.ToUpper();
-                newUserWord.NewChainWord = word;
-                Console.WriteLine("Fin de la modification.");
-                Console.WriteLine("Résultat : " + word);
+                newUserWord.NewChainWord = word.ToUpper();
             }
         }
     }
